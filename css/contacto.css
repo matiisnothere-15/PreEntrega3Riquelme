@@ -1,0 +1,175 @@
+@charset "UTF-8";
+.formulario {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  /* Estilo del título del formulario */
+  /* Estilo para el formulario de inicio de sesión */
+}
+.formulario .titulo_formulario {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 15px;
+  line-height: 1.9;
+  background-color: black;
+  color: #ffffff;
+}
+.formulario .formulario_login {
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formulario .formulario_login input {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 10px;
+  margin-left: 35%;
+}
+.formulario .formulario_login label {
+  color: #ffffff;
+  text-align: center;
+  margin-left: 35%;
+}
+.formulario .formulario_login .section-padding-loggin {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  gap: 10px;
+}
+.formulario .formulario_login button {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+}
+.formulario .boton_form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100PX;
+  font-family: "Roboto", sans-serif;
+}
+.formulario .boton_form .btn {
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1.2px;
+  padding: 12px 32px;
+  text-align: center;
+  text-transform: uppercase;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+}
+.formulario .boton_form .btn:focus {
+  outline: none;
+}
+.formulario .boton_form .btn--primary {
+  color: #ffffff;
+}
+.formulario .boton_form .btn--border {
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.formulario .boton_form .btn--animated {
+  transition-property: color;
+  transition-duration: 0.2s;
+}
+.formulario .boton_form .btn--animated:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #202220;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  z-index: -1;
+}
+.formulario .boton_form .btn--animated:hover {
+  color: #fff;
+}
+.formulario .boton_form .btn--animated:hover:before {
+  transform: scaleX(1);
+  transition-timing-function: cubic-bezier(0.45, 1.64, 0.47, 0.66);
+}
+@media (max-width: 767px) {
+  .formulario .formulario {
+    align-self: center;
+    align-items: center;
+    border-radius: 5px;
+    padding-left: 2%;
+  }
+  .formulario .titulo_formulario {
+    font-size: 20px;
+  }
+  .formulario .formulario input {
+    margin-right: 0;
+    margin-left: 80px;
+    width: 250px;
+  }
+  .formulario .formulario button {
+    width: 250px;
+    margin-left: 0;
+    margin-right: 22px;
+  }
+  .formulario .formulario {
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .formulario {
+    width: 100%;
+    align-self: center;
+    align-items: center;
+    border-radius: 5px;
+    padding-left: 2%;
+    margin-top: 10%;
+  }
+  .formulario .titulo_formulario {
+    font-size: 40px;
+  }
+  .formulario .formulario_login input {
+    margin-right: 0;
+    margin-left: 0;
+    width: 400px;
+  }
+  .formulario .formulario_login {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .formulario .formulario_login button {
+    width: 250px;
+    margin-left: 0;
+    margin-right: 22px;
+    margin-top: 10px;
+  }
+  .formulario .formulario_login label {
+    color: #ffffff;
+    text-align: center;
+    margin-left: 18%;
+  }
+  .formulario .section-padding-loggin {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 10px;
+  }
+}
+
+/*# sourceMappingURL=contacto.css.map */
